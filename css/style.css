@@ -54,6 +54,7 @@
     border-radius: 24px;
     padding:12px 24px;
     cursor: pointer;
+    color:blue;
 }
 
 .hero {
@@ -96,4 +97,78 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+
+.article{
+    padding: 20px 40px;
+    width: 100%;
+}
+
+.content-article{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    
+}
+
+.article-header{
+    padding-top: 10px;
+    text-align: left;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    
+}
+
+.article-desc{
+    letter-spacing: .5px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+.content-head{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+.content-header{
+    padding-top: 10px;
+    text-align: left;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    
+}
+.content-desc{
+    letter-spacing: .5px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.related-images{
+    padding: 20px 40px;
+    width: 100%;
+}
+
+.Image-art{
+    
+    margin: auto;
+}
+
+.image-act{
+    text-align: center;
+    gap: 24px;
+    
+}
+
+.image-act img{
+    display: inline-block;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+
 }

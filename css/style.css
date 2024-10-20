@@ -30,11 +30,18 @@
 
 .item-menu ul {
     gap: 40px;
+    padding: 0;
 }
 
 .item {
     font-size: 1.5rem;
     list-style: none;
+}
+.item a {
+    color: var(--primary-color); /* Use your defined primary color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px; /* Add padding to the links */
+    transition: background-color 0.3s; /* Smooth transition for hover */
 }
 
 .btn {
@@ -147,28 +154,66 @@
     margin-bottom: 10px;
 }
 
-.related-images{
-    padding: 20px 40px;
-    width: 100%;
+ .button{
+    position: absolute; /* Position the button absolutely */
+    right: 15%;        /* Adjust this value to move it horizontally */
+    
 }
 
-.Image-art{
-    
+.btn-view {
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 24px;
+    transition: background-color 0.3s ease;
+    box-shadow: #615f5fee;
+}
+
+.btn-view:hover{
+    background-color: darkgray;
+}
+
+.related-images{
+    padding: 20px 20px;
+    width: 100%;
+}
+.related-image, .Activities{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     margin: auto;
 }
 
+.Image-art{
+    /*margin-top: auto;*/
+    position: relative; /* Ensure the container is the reference point for absolute positioning */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto; /* Centering if needed */
+    /* Remove margin-top: auto; */
+}
+
 .image-act{
-    text-align: center;
-    gap: 24px;
-    
+    display: flex; 
+    justify-content: center;
+    gap: 24px;   
 }
 
 .image-act img{
-    display: inline-block;
-    justify-content: center;
     height: 300px;
     width: 300px;
-    padding-top: 10px;
+    margin-top: 20px;
     margin-bottom: 20px;
-
+    transition: transform 0.3s, box-shadow 0.3s; /* Basic transition */
+    transition-delay: 0.2s; /* Delay for the hover effect */
+    border-radius: 24px;
+}
+.image-act img:hover {
+    transform: scale(1.20); /* Slightly enlarge the image on hover */
+    box-shadow: 0 8px 16px rgba(37, 36, 36, 0.712); /* Darker shadow on hover */
 }

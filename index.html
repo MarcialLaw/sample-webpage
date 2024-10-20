@@ -17,8 +17,8 @@
                               <ul>
                                   <li class="item">Services</li>
                                   <li class="item">Category</li>
-                                  <li class="item">Article</li>
-                                  <li class="item">About Us</li>
+                                  <li class="item"><a href="#related-images">Article</a></li>
+                                  <li class="item"><a href="#article">About Tagas</a></li>
                                   <li class="item">Contact</li>  
                               </ul>
                         </div>
@@ -43,7 +43,7 @@
                   </div>
             </div>
       </section>
-      <section class="article">
+      <section id="article">
             <div class="content-article">
                   <h1 class="article-header">What's New About Tagas? </h1>
                   <p class="article-desc">Tagas, a barangay in Camarines Sur, is undergoing noticeable changes in recent years. 
@@ -70,19 +70,40 @@
                          community spirit. Locals are excited about the future, as new opportunities in business, tourism, and agriculture continue to 
                          unfold. With its blend of progress and tradition, Tagas is quickly becoming a barangay to watch in Camarines Sur.</p>
             </div>
+            
       </section>
 
-      <section class="related-images">
+      <section id="related-images">
             <div class="Image-art">
-                  <h2 class="Activites">Activties</h2>
+                  <h2 class="Activities">Activties</h2>
+                        <div class="button">
+                              <button href="#" class="btn-view">View All Images</button>
+                        </div>
                         <div class="image-act">
                               <img src="image/Tagas-map.JPG" alt="map">
                               <img src="image/mangrove-park.jfif" alt="park">
-                              <img src="image/aerial-view.jfif" alt="view">
-                              
+                              <img src="image/aerial-view.jfif" alt="view">   
                         </div>
+                        
             </div>
 
       </section>
+
+      <script>
+            // Smooth scrolling function
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+        
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+        
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start' // Aligns the top of the section with the top of the viewport
+                    });
+                });
+            });
+        </script>
 </body>
 </html>
